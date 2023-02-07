@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #EBEBEB;
+}
+
+:root{
+    --background-color: #2D2A37;
+    --equals-button:#7F45E2;
+    --action-button: #462878;
+    --reset-button: #975DFA;
+    --gray-scale: #6B6B6B;
+    font-size: 62.5%;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(180deg, #807ECE 0%, #8E7ECE 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: var(--background-color);
+    padding: 5.4rem 3.2rem 3.2rem 3.2rem;
+    border-radius: 4.8rem;
+
+    width: 35.6rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    
+}
+/* =================DISPLAY================= */
+#display{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    
+    padding: 2.2rem;
+    font-size: 2rem;
+}
+#display>p{
+    margin-left: auto;
+}
+p{
+    color: var(--gray-scale);
+}
+#result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result{
+    font-size: 3.6rem;
+}
+
+
+
+
+
+
+/* =================ROWS================= */
+.row{
+    display: flex;
+    gap: 1.2rem;
+    margin-inline:auto;
+    justify-content: center;
+}
+.row button:last-child{
+    background-color: var(--action-button);
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.05), rgba(255, 255, 255, 0.05), #462878);
+}
+#reset{    
+    color: var(--reset-button);
+}
+
+button{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    width: 6.4rem;
+    height: 6.4rem;
+    border: none;
+
+    display: flex;
+    font-size: 2.4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05), #2D2A37);
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.row:last-child button:last-of-type{
+    background-color: var(--equals-button);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.05), #7F45E2);
+}
